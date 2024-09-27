@@ -87,15 +87,18 @@ import DoctorViewHistory from "./pages/DoctorViewHistory";
 import DoctorAvailability from "./pages/DoctorAvailability";
 // import Caregiverprofile from './pages/caregiverprofile';
 
+import CaregiverViewReport from "./pages/CaregiverViewReport";
+import CaregiverCalender from "./pages/CaregiverCalender";
+
 // import CheckupEldersList from "./pages/CheckupEldersList";
 
 // import CaregiverDashboard from "./pages/CaregiverDashboard";
-
 import ViewAssignedRooms from "./pages/ViewAssignedElders";
 
 import ElderDetails from "./pages/ElderDetails";
 
 import ElderProfileCaregiverView from "./pages/ElderProfileCaregiverView";
+
 
 
 function App() {
@@ -203,8 +206,11 @@ function App() {
           <Route path="/DoctorProfile" element={<DoctorProfile />} />
 
 
-          <Route path="/DoctorViewHistory" element={<DoctorViewHistory />} />
+          <Route path="/DoctorViewHistory" element={<DoctorViewHistory/>} />
+          <Route path="/CaregiverViewReport" element={<CaregiverViewReport />} />
+          <Route path="/CaregiverCalender" element={<CaregiverCalender />} />
 
+          <Route path="/DoctorViewHistory" element={<DoctorViewHistory />} />
           <Route path="/ViewAssignedElders" element={<ViewAssignedRooms />} />
 
           <Route path="/ElderDetails" element={<ElderDetails />} />
@@ -215,6 +221,7 @@ function App() {
 
 
           <Route path="/ElderprofileCaregiverView" element={<ElderProfileCaregiverView />} />
+
 
 
 
